@@ -77,4 +77,6 @@ We also tried a Random Forest model and the results of that were also 91% accura
 ## Sources and References
 
 1. Dataset Source: https://archive.ics.uci.edu/dataset/222/bank+marketing
+2. Keras Tuner - https://www.tensorflow.org/tutorials/keras/keras_tuner
+3. Google Colab - https://research.google.com/colaboratory/faq.html
 
