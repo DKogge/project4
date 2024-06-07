@@ -57,14 +57,17 @@ This project is modelled using the [bank-additional-full.csv](Resources/bank-add
 
 ## Model Building and Analysis
 The first Tensorflow Sequential model was created using the Relu activation and 2 layers with 5 neurons each that provided the baseline accuracy of 91.2%.  
+
 <img width="536" alt="bank_marketing_results" src="https://github.com/DKogge/project4/assets/152900988/5ab86f45-3204-4a34-9833-1b0602701f19">
 #### *Please see the notebook located in the Data folder.
 
 ## Model Optimizations
 A Keras Tuner auto optimization model was run to see if a more optimal model could be obtained.  The options for the model were Relu Tanh and Sigmoid for the activations with the option of up to 6 layers and up to 10 neurons per layer.  The result was a Sigmoid activation with 5 layers.  When the testing data was run the accuracy did improve but only slightly to 91.3%
+
 <img width="542" alt="auto_opt_result" src="https://github.com/DKogge/project4/assets/152900988/0bd8b635-f8df-4d23-80f9-e2b18d7312e2">
  
 We then went back to the features and removed the 4 columns of data that related to the economic indicators and reran the Tensorflow Sequential model with the Relu activation and 2 layers of 5 neurons.  This version improved the model to 91.5%.
+
 <img width="514" alt="dropped_columns_results" src="https://github.com/DKogge/project4/assets/152900988/e4b22017-c430-4f23-8674-8c9492ab7f17">
  
 We also tried a Random Forest model and the results of that were also 91% accuracy.
