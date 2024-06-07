@@ -53,6 +53,21 @@ This project is modelled using the [bank-additional-full.csv](Resources/bank-add
 
 ## Data Preprocessing
 
+![image](https://github.com/DKogge/project4/assets/153557880/be261b2d-d348-4bb0-b1ae-519079a3ac53)
+
+1.	Retrieve the data from the UCI Machine Learning Repository.
+2.	Upload the data to GitHub repository.
+3.	Read the data from the CSV file on GitHub for cleaning and validation using Spark SQL as our primary tool for data extraction. 
+4.	In the transformation process we:
+    a.	Filled all missing values by 0
+    b.	Rename the default column to default credit
+
+5.  Convert the PySpark DataFrame to a Pandas DataFrame
+6.  Save the DataFrame as a CSV for visualization
+7.	Determine the number of unique values in each column
+8.	Checking the value of different columns to replace it with Other in order to normalize our data frame.
+9.	Convert our categorical data to numeric using ‘ pd.get_dummies’
+
 ## Data Visualization
 
 ## Model Building and Analysis
