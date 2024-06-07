@@ -74,9 +74,6 @@ We also tried a Random Forest model and the results of that were also 91% accura
  
 #### *Please see the model_performace_log.xlsx for the full details and Optimization folder for the corresponding notebooks.
 
-
-## Key Insights and Recommendations
-
 ## Limitations and Next Steps
 Ran into issues with the max processing limit in the free version of Colab, several model runs had the connection broken 4+ hours into the run. Would recommend the paid version and more resources dedicated to future model research.
 
