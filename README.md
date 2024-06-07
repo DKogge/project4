@@ -5,7 +5,7 @@
 ### Contributors:
     Aliyu Muraina
     David Kogge
-    Eriel Kadambi
+    Eriel Kabambi
     Indu Bandi
 
 ## Project Overview
