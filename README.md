@@ -65,7 +65,7 @@ We then went back to the features and removed the 5 columns of data that related
  
 We also tried a Random Forest model and the results of that were also 91% accuracy.
  
-# Please see the model_performace_log.xlsx for the full details and Optimization folder for the corresponding notebooks.
+#### *Please see the model_performace_log.xlsx for the full details and Optimization folder for the corresponding notebooks.
 
 
 ## Key Insights and Recommendations
