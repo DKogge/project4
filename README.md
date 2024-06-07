@@ -84,6 +84,8 @@ Noticed an imbalance in the testing dataset with a higher number of non-responde
 
 ## Conclusion
 
+The machine learning models we generated were able to predict results with 91% accuracy.  While not perfect, we felt this was a excellent tool for this bank to use for their future marketing campaigns.
+
 ## Sources and References
 
 1. Dataset Source: https://archive.ics.uci.edu/dataset/222/bank+marketing
