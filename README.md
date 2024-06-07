@@ -59,6 +59,7 @@ This project is modelled using the [bank-additional-full.csv](Resources/bank-add
 The first Tensorflow Sequential model was created using the Relu activation and 2 layers with 5 neurons each that provided the baseline accuracy of 91.2%.  
 
 <img width="536" alt="bank_marketing_results" src="https://github.com/DKogge/project4/assets/152900988/5ab86f45-3204-4a34-9833-1b0602701f19">
+
 #### *Please see the notebook located in the Data folder.
 
 ## Model Optimizations
