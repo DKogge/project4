@@ -77,6 +77,10 @@ We also tried a Random Forest model and the results of that were also 91% accura
 ## Key Insights and Recommendations
 
 ## Limitations and Next Steps
+Ran into issues with the max processing limit in the free version of Colab, several model runs had the connection broken 4+ hours into the run. Would recommend the paid version and more resources dedicated to future model research.
+
+Noticed an imbalance in the testing dataset with a higher number of non-responders (9124) compared to responders (1173) in random forest classification model.
+
 
 ## Conclusion
 
