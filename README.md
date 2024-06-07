@@ -56,12 +56,17 @@ This project is modelled using the [bank-additional-full.csv](Resources/bank-add
 ## Data Visualization
 
 ## Model Building and Analysis
-
-We ran several models with variations on the features to see if better results could be obtained.  Please see the model log and Optimization folder for the full details and notebooks.
-
-The first sequential model using the Relu activation and 2 layers with 5 neurons each gave the baseline accuracy of 91%.  The auto optimization and other variations gave minimal improvements.
-
+The first Tensorflow Sequential model was created using the Relu activation and 2 layers with 5 neurons each that provided the baseline accuracy of 91.2%.  
+ 
 ## Model Optimizations
+A Keras Tuner auto optimization model was run to see if a more optimal model could be obtained.  The options for the model were Relu Tanh and Sigmoid for the activations with the option of up to 6 layers and up to 10 neurons per layer.  The result was a Sigmoid activation with 5 layers.  When the testing data was run the accuracy did improve but only slightly to 91.3%
+ 
+We then went back to the features and removed the 5 columns of data that related to the economic indicators and reran the Tensorflow Sequential model with the Relu activation and 2 layers of 5 neurons.  This version improved the model to 91.5%.
+ 
+We also tried a Random Forest model and the results of that were also 91% accuracy.
+ 
+# Please see the model_performace_log.xlsx for the full details and Optimization folder for the corresponding notebooks.
+
 
 ## Key Insights and Recommendations
 
