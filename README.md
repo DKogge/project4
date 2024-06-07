@@ -57,6 +57,10 @@ This project is modelled using the [bank-additional-full.csv](Resources/bank-add
 
 ## Model Building and Analysis
 
+We ran several models with variations on the features to see if better results could be obtained.  Please see the model log and Optimization folder for the full details and notebooks.
+
+The first sequential model using the Relu activation and 2 layers with 5 neurons each gave the baseline accuracy of 91%.  The auto optimization and other variations gave minimal improvements.
+
 ## Model Optimizations
 
 ## Key Insights and Recommendations
