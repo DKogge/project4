@@ -71,24 +71,28 @@ This project is modelled using the [bank-additional-full.csv](Resources/bank-add
 ## Data Visualization
 
 ## Model Building and Analysis
-The first Tensorflow Sequential model was created using the Relu activation and 2 layers with 5 neurons each that provided the baseline accuracy of 91.2%.  
+The first Tensorflow Sequential model (bank_marketing) was created using the Relu activation and 2 layers with 5 neurons each that provided the baseline accuracy of 91.2%.  
 
 <img width="536" alt="bank_marketing_results" src="https://github.com/DKogge/project4/assets/152900988/5ab86f45-3204-4a34-9833-1b0602701f19">
 
 #### *Please see the notebook located in the Data folder.
 
 ## Model Optimizations
-A Keras Tuner auto optimization model was run to see if a more optimal model could be obtained.  The options for the model were Relu Tanh and Sigmoid for the activations with the option of up to 6 layers and up to 10 neurons per layer.  The result was a Sigmoid activation with 5 layers.  When the testing data was run the accuracy did improve but only slightly to 91.3%
+A Keras Tuner auto optimization model was run to see if a more optimal model could be obtained.  The options for the model were Relu Tanh and Sigmoid for the activations with the option of up to 6 layers and up to 10 neurons per layer (bank_marketing_auto_opt1).  The result was a Sigmoid activation with 5 layers.  When the testing data was run the accuracy did improve but only slightly to 91.3%
 
 <img width="542" alt="auto_opt_result" src="https://github.com/DKogge/project4/assets/152900988/0bd8b635-f8df-4d23-80f9-e2b18d7312e2">
  
-We then went back to the features and removed the 4 columns of data that related to the economic indicators and reran the Tensorflow Sequential model with the Relu activation and 2 layers of 5 neurons.  This version improved the model to 91.5%.
+We then went back to the features and removed the 4 columns of data that related to the economic indicators and reran the Tensorflow Sequential model with the Relu activation and 2 layers of 5 neurons (bank_marketing_dropped_end_columns).  This version improved the model to 91.5%.
 
 <img width="514" alt="dropped_columns_results" src="https://github.com/DKogge/project4/assets/152900988/e4b22017-c430-4f23-8674-8c9492ab7f17">
  
-We also tried a Random Forest model and the results of that were also 91% accuracy.
+We also tried a Random Forest model (bank_marketing_random_forest) and the results of that were also 91% accuracy.
 
 <img width="404" alt="random_forest_results" src="https://github.com/DKogge/project4/assets/152900988/8eaa72dd-57fd-4ea3-8a5b-282aafcc91fd">
+
+Several other optimizations were attempted, we ran a 2nd auto optimization with fewer resources (bank_marketing_auto_opt2), we edited the age column to bins by decade (age_bins), we grouped the unknown and illiterate education categories together as "other"(edu_optimize), we looked at only the top 5 professions moving all the rest to "other"(employed_2k) all of these models returned results below 91.5%.  The model that got the best results was using all the actual jobs and moving the unknown, student and unemployed groups into the "other" category.  This gave a 91.6% return using the testing data.
+
+<img width="536" alt="employed_only_results" src="https://github.com/DKogge/project4/assets/152900988/cd7452d1-418c-473e-8c94-3b0bc2de6186">
 
  
 #### *Please see the model_performace_log.xlsx for the full details and Optimization folder for the corresponding notebooks.
