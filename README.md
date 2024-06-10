@@ -69,6 +69,40 @@ This project is modelled using the [bank-additional-full.csv](Resources/bank-add
 9.	Convert our categorical data to numeric using ‘ pd.get_dummies’
 
 ## Data Visualization
+In the visualization process using Tableau, a key column was renamed from 'Y', representing the target variable, to 'Subscribed'. One of the visualization ideas involved analyzing the relationship between customers' age distribution and job status in relation to their subscription status. The following insights were derived from the bar chart visualization:
+
+### Job Status and Subscription:
+##### Admin Employees: 
+The bar chart clearly indicates that employees in administrative roles have a higher subscription rate compared to other job categories.
+##### Unknown Job Status: 
+Conversely, individuals with an unknown job status exhibit the lowest subscription rates.
+####Age Distribution and Subscription:
+The analysis reveals that the age group with the highest subscription rates falls between 30 to 40 years old, particularly among those employed in administrative positions.
+These insights suggest that targeted marketing efforts focusing on individuals aged 30-40 in administrative roles could potentially enhance subscription rates.
+![Screenshot 2024-06-09 at 20 18 19](https://github.com/DKogge/project4/assets/79320352/7190dd9c-f6db-496b-ac9e-b0b8d87674ff)
+These insights suggest that targeted marketing efforts focusing on individuals aged 30-40 in administrative roles could potentially enhance subscription rates.
+
+Another analysis focused on the subscription outcomes segmented by education level, specifically comparing those who subscribed to those who did not. The key findings from this analysis are:
+
+#### Subscription Outcomes by Education:
+##### University Degree Holders: The analysis shows that individuals with a university degree constitute the largest group among both subscribed and non-subscribed customers.
+#### Implications:
+This suggests that the majority of the campaign efforts have primarily reached out to individuals with university degrees.
+<img width="1049" alt="Screenshot 2024-06-06 at 21 10 54" src="https://github.com/DKogge/project4/assets/79320352/cc33d91c-fa28-4c48-8139-bad3bc702194">
+
+These findings indicate that while university graduates are the main target of the campaigns, further strategies may be needed to convert more of them from non-subscribed to subscribed customers.
+
+To gain more concrete insights from the dataset, further analysis was performed on the Campaign Success Rate, Monthly Calls and Subscriptions, and Best Days to Call. The results of this analysis revealed the following key insights:
+#### Campaign Success Rate:
+The majority of subscriptions come from individuals who were called only once.
+#### Best Days to Call:
+The optimal days for calling, leading to the highest subscription rates, are Tuesdays vwith 11.8% and Thursdays with 12.1% .
+#### Best Month for Calls:
+The month of May emerged as the most successful month for securing subscriptions.
+![Screenshot 2024-06-06 at 20 37 53](https://github.com/DKogge/project4/assets/79320352/57da2e34-2dcd-4aa4-8ef6-19a8932ab944)
+These findings suggest that the most effective strategy for maximizing subscriptions involves targeting potential customers with a single call, particularly on Wednesdays and Thursdays, with a focus on the month of May.
+#### https://public.tableau.com/views/Bank_Marketing_17176507235630/OutreachingEmployees?:language=en-GB&publish=yes&:sid=&:display_count=n&:origin=viz_share_link
+
 
 ## Model Building and Analysis
 The first Tensorflow Sequential model (bank_marketing) was created using the Relu activation and 2 layers with 5 neurons each that provided the baseline accuracy of 91.2%.  
