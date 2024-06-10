@@ -129,7 +129,8 @@ Several other optimizations were attempted, we ran a 2nd auto optimization with 
 <img width="536" alt="employed_only_results" src="https://github.com/DKogge/project4/assets/152900988/cd7452d1-418c-473e-8c94-3b0bc2de6186">
 
  
-#### *Please see the model_performace_log.xlsx for the full details and Optimization folder for the corresponding notebooks.
+#### *Please see the model_performace_log.xlsx for the full details and Optimization folder for the corresponding notebooks. Snapshot shown below
+![model_performace_log_snapshot](Images/Model_Optimizations_Summary.png)
 
 ## Limitations and Next Steps
 Ran into issues with the max processing limit in the free version of Colab, several model runs had the connection broken 4+ hours into the run. Would recommend the paid version and more resources dedicated to future model research.
